@@ -1,5 +1,13 @@
 # GodotBodyEnteredBug (Godot v4.2.2 stable win64)
 
+## Update
+
+**Solved**
+
+The bug was caused by the fact I was updating the position of a RigidBody entity, rather than updating the velocity and letting the engine apply the physics logics. 
+https://github.com/godotengine/godot/issues/91409#issuecomment-2088403669
+
+
 ## Description of the situation
 
 We have 2 entities:
